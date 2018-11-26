@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Services</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="proekt2.css">
+</head>
+<body>
+	<div class="container-fluid color">
+		<h1>We're best in</h1>
+		<div class="container background-color">
+			<div class="row">
+				<!-- BUTTONS -->
+				<div class="col-md-4 col-lg-4 col-sm-4">
+					<div class="row">
+						<div class="col-md-12 text-center btn-branding">
+							<button id="branding">Branding</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center btn-marketing">
+							<button  id="marketing">Marketing</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center btn-coding" >
+							<button id="coding">Coding</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- IMAGES -->
+				<div class="col-md-4 col-lg-4 col-sm-4 text-right">
+					<div class="row">
+						<div class="col-md-4 col-lg-4 col-sm-4 image-marketing market" style="z-index: 9999;">
+							 <img src="marketing.png"> 
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-4 image-branding brand" style=" z-index: 9999; display: none;"> 
+							<img src="branding.png">
+						</div> 
+						<div class="col-md-4 col-lg-4 col-sm-4  image-coding code" style="z-index: 9999; display: none;">
+							<img src="code.jpg">
+						</div>
+					</div>
+				</div>
+
+				<!-- LISTS -->
+				<div class="col-md-4 col-lg-4 col-sm-4 text-right tasha">
+					<div class="row red">
+						<div class="col-md-4 col-lg-4 col-sm-4  section-marketing list">
+							 <ul style="list-style-type: none;">
+								<li>Lead Generation</li>
+								<li>Social Media Marketing</li>
+								<li>Search Engine Optimization</li>
+								<li>PPC and paid search menagment</li>
+								<li>Strategy</li>
+								<li>Display and Advertising Recapture Marketing</li>
+								<li>Conversion Rate Optimisation</li>
+								<li>Growth Hacking</li>
+								<li>Side Project Marketing</li>
+								<li>Email Marketing</li>
+								<li>Content Marketing</li>
+								<li>Digital Event Amplification</li>
+								<li>Digital Marketing Training</li>
+							</ul>
+						</div>
+
+						<div class="col-md-4 col-lg-4 col-sm-4  section-branding" style="display: none;">
+							 <ul style="list-style-type: none;" >
+								<li>Art & Creative Direction</li>
+								<li>Brand Identity</li>
+								<li>Logo Design</li>
+								<li>Graphic Guidelines</li>
+								<li>Illustration</li>
+								<li>Typography</li>
+								<li>Print</li>
+								<li>Strategy</li>
+							</ul>
+						</div>
+
+
+						<div class="col-md-4 col-lg-4 col-sm-4 section-coding" style="display: none;">
+							<ul style="list-style-type: none;">
+								<li>Web Design</li>	
+								<li>Mobile & App Design</li> 
+								<li class="grid-item">E-Commerce</li>
+								<li class="grid-item">CMS (WordPress & Prestashop)</li>
+								<li class="grid-item">UI / UX</li>
+								<li>Responsive</li>
+								<li>Templating</li>
+								<li>Creative Front-End & Back-End Development</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script>
+  	
+  	$(document).ready(function(){
+
+  // Funkcija za branding
+
+  function branding(){
+  $("#branding").on("click",function(){
+ 
+ 			$(".market , .section-marketing , .code , .section-coding").css("display", "none");
+ 		
+        
+           var left = $('.brand').offset().left;
+             $(".brand").show().css('left', function(){ return $(this).offset().left; })
+              .animate({"left":"0px"}, "slow");   
+               $(".section-branding").show().css('left', function(){ return $(this).offset().left; })
+              .animate({"left":"0px"}, "slow");  
+
+              
+         });
+  			
+    }
+
+    branding();
+ 
+
+  // Funkcija za marketing
+
+  function marketing(e){
+  $("#marketing").on("click",function(){
+ 
+ 			  $(".brand , .section-branding , .code , .section-coding").css("display", "none");
+        
+           var left = $('.market').offset().left;
+             $(".market").show().css('left', function(){ return $(this).offset().left; })
+              .animate({"left":"0px"}, "slow");   
+               $(".section-marketing").show().css('left', function(){ return $(this).offset().left; })
+              .animate({"left":"0px"}, "slow"); 
+
+            
+         });
+  		
+    }
+    
+
+    marketing();
+
+    // Funkcija za coding
+
+     function coding(){
+  	$("#coding").on("click",function(){
+ 
+ 		$(".brand , .section-branding , .market , .section-marketing").css("display", "none");
+ 		
+           var left = $('.code').offset().left;
+             $(".code").show().css('left', function(){ return $(this).offset().left; })
+              .animate({"left":"0px"}, "slow");   
+               $(".section-coding").show().css('left', function(){ return $(this).offset().left; })
+              .animate({"left":"0px"}, "slow");  
+
+ 
+         });
+
+    }
+    
+
+    coding();
+
+
+    // Mousewheel
+    $(window).on('mousewheel', function(e) {
+            
+
+            if ($((".code , .section-coding")|| (".brand , section-branding")).css("display") == "block") {
+                	 $('#marketing').trigger("click");
+        
+                    
+            } else if ($((".market , .section-marketing")|| (".code , .section-coding")).css("display") == "block") {
+
+                   	$("#branding").trigger("click");
+                }
+            else  if
+                 ($((".brand , section-branding")|| ("market , section-marketing" ) ).css("display") == "block")  {
+                   $("#coding").trigger("click"); 
+              }
+
+         });   
+
+     });
+
+
+  
+  </script>
+
+</body>
+</html>

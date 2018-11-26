@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WORK</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="work_style.css">
+   <link rel="stylesheet" type="text/css" href="hp.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"></head>
+<body>
+  <nav class="nav navbar-default navigation">
+    <div class="container" id="navigation-container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#martin">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+        </button>
+        <a href="hp.html" class="nav-logo">
+          <img src="https://www.localised.com/img/logo-glyph-white-585e89bacf.svg" style="width: 170px;" id="logo"></a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="martin">
+        <ul class="list-inline list-unstyled navbar-right menu">
+          <li class="menu-link">
+            <a href="servises1.html">SERVICES</a>
+          </li>
+          <li class="menu-link">
+            <a href="team_page.html">TEAM</a>
+          </li>
+          <li class="menu-link">
+            <a href="work.html">WORK</a>
+          </li>
+          <li class="menu-link">
+            <a href="proekt2.html" class="hire-us" style="color: white;">HIRE US</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="work-bg-image">
+        <div class="work-red-line p-top p-bottom"></div>
+        <div class="work-red-line p-top p-bottom"></div>
+        <div class="work-red-line p-top p-bottom"></div>
+        <div class="work-red-line p-top p-bottom"></div>
+        <div class="work-red-line p-top p-bottom"></div>
+      </div>
+
+      <div id="carousel-1" class="carousel slide work-carousel" data-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="item active" >
+            <div class="item__third work-c-image">
+              <a href="work_1.html">
+                <img src="Work1.jpg" alt=""></a>
+              <div class="work-c-box box-hide">
+                <h3>The Coffee Shop</h3>
+                <p>BRAND ENHANCEMENT</p>
+              </div>
+            </div>
+          </div>
+          <div class="item" id="vintageco">
+            <div class="item__third work-c-image">
+              <a href="work_2.html">
+                <img src="Work2.jpg" alt=""></a>
+              <div class="work-c-box box-hide">
+                <h3>Vintage Co</h3>
+                <p>PHOTOGRAPHY</p>
+              </div>
+            </div>
+          </div>
+          <div class="item" id="halvilleuni">
+            <div class="item__third work-c-image">
+              <a href="work_3.html">
+                <img src="Work3.jpg" alt=""></a>
+              <div class="work-c-box box-hide">
+                <h3>Hallville University</h3>
+                <p>WEBSITE DESIGN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev"></a>
+        <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next"></a>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="row footer px-3">
+  <!--     <div class="container"> -->
+        <div class="col-md-8 col-sm-8 col-xs-6 footer-copy">
+          <p class="grey">&copy 2018 Brainster. All rights reserved.</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6 social-media">
+          <ul class="list-unstyled list-inline text-right">
+            <li>
+              <a href="https://www.facebook.com/"> <i class="fab fa-facebook fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/?hl=en"> <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+    <!--   </div> -->
+    </div>
+  </div>
+
+ 
+  <!-- <script src="underscore-min.js"></script> -->
+  <script type="text/javascript">
+  $(document).ready(function() {
+   
+$('.work-carousel .item').each(function(){
+  var next = $(this).next();
+  next = $(this).siblings(':first');
+  next.children(':first-child').clone().appendTo($(this));
+});
+
+
+$('.work-carousel .item').each(function(){
+  var prev = $(this).prev();
+  prev = $(this).siblings(':last');
+  prev.children(':nth-last-child(2)').clone().prependTo($(this));
+});
+
+
+ $(".right").hover( function(){
+      $(this).addClass("work-cursor-right");
+  }, function() {
+      $(this).removeClass("work-cursor-right");
+  });
+
+ $(".left").hover( function(){
+      $(this).addClass("work-cursor-left");
+  }, function() {
+      $(this).removeClass("work-cursor-left");
+  });
+
+$(window).on("wheel", function(event){
+  if(event.originalEvent.deltaY < 0){
+    $("#carousel-1").carousel("prev");
+  }
+  else {
+    $("#carousel-1").carousel("next");
+  }
+});
+
+
+});
+</script>
+<script src="hp.js"></script>
+</body>
+</html>

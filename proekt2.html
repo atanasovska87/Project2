@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proekt2</title>
+
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="proekt2.css">
+  <link rel="stylesheet" type="text/css" href="hp.css">
+
+</head>
+<body>
+  <nav class="nav navbar-default navigation">
+         <div class="container" id="navigation-container">
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#martin">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a href="hp.html" class="nav-logo">
+            <img src="https://www.localised.com/img/logo-glyph-white-585e89bacf.svg" style="width: 170px;" id="logo"></a>
+          </div>
+     
+         <div class="collapse navbar-collapse" id="martin">
+            <ul class="list-inline list-unstyled navbar-right menu">
+              <li class="menu-link">
+                 <a href="servises1.html">SERVICES</a>
+              </li>
+              <li class="menu-link">
+                <a href="team_page.html">TEAM</a>
+              </li>
+              <li class="menu-link">
+                <a href="work.html">WORK</a>
+              </li>
+              <li class="menu-link">
+                 <a href="proekt2.html" class="hire-us" style="color: white;">HIRE US</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="container-fluid background">
+	<div class="bg-background">
+      
+		
+
+  <!-- SECTION-QUESTION -->
+  <div class="container-fluid"> 		
+ 	 	<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 text-center section-question">
+				  <h4 class="hideme">How can we help you?</h4>
+		  </div>
+		</div>
+	</div> 
+
+
+  <!-- SECTION-INFO -->
+	<div class="container section-info text-center">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-lg-4 hideme">
+				<h5>Business Development</h5>
+        <br>
+				<p>+1 646 493 0389</p>
+        <br>
+				<p class="bg-bottom">sales@localised.com</p>
+        <hr style="display: none;">
+			</div>
+			<div class="col-md-4 col-sm-4 col-lg-4 hideme">
+				<h5>Careers</h5>
+        <br>
+				<p>+1 646 493 0389</p>
+        <br>
+				<p class="bg-bottom">work@localised.com</p>
+         <hr style="display: none;">
+			</div>
+			<div class="col-md-4 col-sm-4 col-lg-4 hideme">
+				<h5>Press Inquiries</h5>
+        <br>
+				<p>+1 646 493 0389</p>
+        <br>
+				<p class="bg-bottom">pr@localised.com</p>
+			</div>
+		</div>
+	</div>
+
+
+ </div>
+</div>
+
+
+<script>
+
+
+// Funkcija fadeIn
+ $(document).ready(function() {
+     $(window).fadeIn( function(){
+         $('.hideme').each( function(i){
+            
+           var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_object ){
+                
+                 $(this).animate({'opacity':'1'},3500);
+                    
+            }
+      }); 
+   });
+
+// funkcija za navigacija da se rasiri na golem ekran
+  if ($(window).width() > 1600) {  
+    $("#navigation-container").removeClass("container");
+    }  
+
+// navigacija da stane temna
+  $(".navbar-toggle").on("click", function(){
+  $(".navigation").toggleClass("clicked");
+
+});
+
+  
+
+
+
+
+ });
+
+
+
+</script>
+
+</body>
+</html>
